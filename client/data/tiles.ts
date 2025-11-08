@@ -1,3 +1,5 @@
+import { To } from 'react-router'
+
 export interface NumberSymbol {
   number: number
   image: string
@@ -5,7 +7,8 @@ export interface NumberSymbol {
 }
 
 export interface NumberWritten {
-  number: string
+  number: number
+  number_text: string
 }
 
 export interface TilesSymbol {
@@ -13,7 +16,52 @@ export interface TilesSymbol {
 }
 
 export interface TilesWritten {
-  tiles_symbol: NumberWritten[]
+  tiles_written: NumberWritten[]
+}
+
+export const oneToTenTilesText: TilesWritten = {
+  tiles_written: [
+    {
+      number: 1,
+      number_text: 'one',
+    },
+    {
+      number: 2,
+      number_text: 'two',
+    },
+    {
+      number: 3,
+      number_text: 'three',
+    },
+    {
+      number: 4,
+      number_text: 'four',
+    },
+    {
+      number: 5,
+      number_text: 'five',
+    },
+    {
+      number: 6,
+      number_text: 'six',
+    },
+    {
+      number: 7,
+      number_text: 'seven',
+    },
+    {
+      number: 8,
+      number_text: 'eight',
+    },
+    {
+      number: 9,
+      number_text: 'nine',
+    },
+    {
+      number: 10,
+      number_text: 'ten',
+    },
+  ],
 }
 
 export const oneToTenTiles: TilesSymbol = {
