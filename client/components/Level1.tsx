@@ -1,25 +1,25 @@
 import { useState } from 'react'
-import GetRandomNumber from '../Models/random-number'
-import { data } from '../data/level-one'
+import { oneToTenTiles } from '../data/tiles'
+import RandomImageGenerator from './Image-random'
 
 function LevelOne() {
-  const images = data.images
-  const randomNumber = GetRandomNumber()
-
-  // I need it to map through the images array and then return/display whichever
-  // image number matches the random generated number
-  // it needs to do this on perhaps level one render load
-
+  const tiles = oneToTenTiles.tiles_symbol
   return (
-    <div>
-      <h2>What Number am I??</h2>
-
-      <div>
-        {images.map((image) => {
-          return <img key={image.number} src={image.image} alt={image.alt} />
+    <>
+      <div className="tiles">
+        {tiles.map((tile) => {
+          return (
+            <button className="tile-button" key={tile.number}>
+              <img className="tile-image" src={tile.image} alt={tile.alt} />
+            </button>
+          )
         })}
       </div>
-    </div>
+      <div>
+        <h2 id="number-question">What Number am I??</h2>
+        <RandomImageGenerator />
+      </div>
+    </>
   )
 }
 
