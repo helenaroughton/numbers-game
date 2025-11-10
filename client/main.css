@@ -10,7 +10,7 @@ body {
   padding: 0%;
 }
 
-.tiles-numbers {
+.combo-tiles-numbers {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
   gap: 10px; /* optional spacing between tiles */
@@ -18,14 +18,20 @@ body {
   margin: 0 auto;
 }
 
-.tile-button {
-  background-color: #d9ebe4e7;
+.combo-tile-button {
+  background-color: #b9ebd5e7;
   padding: 0%;
   width: 5rem;
-  height: 5rem;
+  height: 8rem;
   border: none;
   border-radius: 15%;
 }
+
+.combo-tile-text {
+  background-color: #b9ebd5e7;
+}
+
+#d9ebe4e7;
 
 .tiles-text {
   max-width: 70%;
@@ -49,16 +55,16 @@ body {
   text-align: center;
 }
 
-.tile-image {
+.combo-tile-image {
   width: 5rem;
   height: 5rem;
 }
 
-.tile-button:hover {
+.combo-tile-button:hover {
   background-color: #62ae91e7;
 }
 
-.tile-button-text:hover {
+.combo-tile-button-text:hover {
   background-color: #62ae91e7;
 }
 

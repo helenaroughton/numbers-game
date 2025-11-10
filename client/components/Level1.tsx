@@ -1,33 +1,44 @@
 import { useState } from 'react'
-import { oneToTenTiles, oneToTenTilesText } from '../data/tiles'
+import { oneToTenTilesBoth } from '../data/tiles'
 import RandomImageGenerator from './Image-random'
+import GetRandomNumber from '../Models/random-number'
 
 function LevelOne() {
-  const tiles = oneToTenTiles.tiles_symbol
-  const tilesText = oneToTenTilesText.tiles_written
+  const [randomNumber, setRandomNumber] = useState(GetRandomNumber())
+  const tiles = oneToTenTilesBoth.tiles_number
+
+  const handleClick = (tileNumber: number) => {
+    if (tileNumber === randomNumber) {
+      alert('Correct!')
+      setRandomNumber(GetRandomNumber())
+    } else {
+      alert('Wrong!')
+    }
+  }
+
   return (
     <>
-      <div className="tiles-numbers">
+      <div className="combo-tiles-numbers">
         {tiles.map((tile) => {
           return (
-            <button className="tile-button" key={tile.number}>
-              <img className="tile-image" src={tile.image} alt={tile.alt} />
-            </button>
-          )
-        })}
-      </div>
-      <div className="tiles-text">
-        {tilesText.map((tile) => {
-          return (
-            <button className="tile-button-text" key={tile.number}>
-              {tile.number_text}
+            <button
+              className="combo-tile-button"
+              key={tile.number}
+              onClick={() => handleClick(tile.number)}
+            >
+              <img
+                className="combo-tile-image"
+                src={tile.image}
+                alt={tile.alt}
+              />
+              <h2 className="combo-tile-text">{tile.number_text}</h2>
             </button>
           )
         })}
       </div>
       <div>
-        <h2 id="number-question">What Number am I??</h2>
-        <RandomImageGenerator />
+        <h2 id="number-question">How many am I??</h2>
+        <RandomImageGenerator randomNumber={randomNumber} />
       </div>
     </>
   )

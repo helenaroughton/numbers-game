@@ -1,10 +1,11 @@
-import GetRandomNumber from '../Models/random-number'
 import { data, Image } from '../data/level-one'
 
-function RandomImageGenerator() {
+interface Props {
+  randomNumber: number
+}
+
+function RandomImageGenerator({ randomNumber }: Props) {
   const images = data.images
-  const randomNumber = GetRandomNumber()
-  console.log(randomNumber)
   const randomImage: Image = images.find(
     (image) => image.number === randomNumber,
   )

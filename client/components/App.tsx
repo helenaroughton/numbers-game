@@ -1,7 +1,5 @@
 import { Outlet } from 'react-router'
-import { Image } from '../Models/Image'
 import LevelOne from './Level1'
-import RandomImageGenerator from './Image-random'
 import Footer from './Footer'
 import Header from './Header'
 
