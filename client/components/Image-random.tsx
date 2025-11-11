@@ -12,6 +12,7 @@ function RandomImageGenerator({ randomNumber }: Props) {
 
   return (
     <div className="image-container">
+      <h2 id="number-question">How many {randomImage.text} are there?</h2>
       <img
         className="numberImage"
         key={randomImage.number}
