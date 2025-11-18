@@ -49,6 +49,9 @@
   },
   "browserslist": "> 2%, not dead",
   "dependencies": {
+    "@slidev/cli": "^52.8.0",
+    "gsap": "^3.13.0",
+    "party-js": "^2.2.0",
     "react-bootstrap-icons": "^1.11.6"
   }
 }

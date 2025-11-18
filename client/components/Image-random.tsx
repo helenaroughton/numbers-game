@@ -13,6 +13,16 @@ function RandomImageGenerator({ randomNumber }: Props) {
   return (
     <div className="image-container">
       <h2 id="number-question">How many {randomImage.text} are there?</h2>
+      {/* <audio controls preload>
+        <track
+          kind="captions"
+          srcLang="en"
+          src="${randomImage.number}"
+          label="english-captions"
+        ></track>
+        <source src={randomImage.audio} type="audio" />
+      </audio> */}
+
       <img
         className="numberImage"
         key={randomImage.number}

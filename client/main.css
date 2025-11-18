@@ -40,15 +40,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #4e1fce;
-}
-
-.combo-number-icon:hover {
-  background-color: #62ae91e7;
+  pointer-events: none;
 }
 
 .combo-tile-text {
   background-color: #b9ebd5e7;
   color: #4e1fce;
+  pointer-events: none;
 }
 
 .tiles-text {
@@ -79,6 +77,11 @@ body {
 } */
 
 .combo-tile-button:hover {
+  background-color: #62ae91e7;
+}
+
+.combo-tile-button:hover .combo-number-icon,
+.combo-tile-button:hover .combo-tile-text {
   background-color: #62ae91e7;
 }
 
