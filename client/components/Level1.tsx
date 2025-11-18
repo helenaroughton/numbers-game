@@ -27,7 +27,7 @@ function LevelOne() {
         count: party.variation.range(40, 80), // number of particles
         size: party.variation.range(1.5, 2.5), // particle size which makes it all look bigger (default is ~1)
       })
-      setTimeout(reset, 1500)
+      setTimeout(reset, 1000)
     } else {
       // wiggle button that was clicked
       gsap.to(e.currentTarget, {
@@ -47,7 +47,6 @@ function LevelOne() {
     <>
       <div>
         <RandomImageGenerator randomNumber={randomNumber} />
-        {/* <AudioPlayer /> */}
       </div>
       <div className="combo-tiles-numbers">
         {tiles.map((tile) => {
@@ -57,12 +56,8 @@ function LevelOne() {
               key={tile.number}
               onClick={(e) => handleClick(tile.number, e)}
             >
-              {tile.icons.map((IconComponent, index) => (
-                <IconComponent
-                  key={index}
-                  size={24}
-                  className="combo-number-icon"
-                />
+              {tile.icons.map((Icon, index) => (
+                <Icon key={index} size={40} className="combo-number-icon" />
               ))}
 
               <h2 className="combo-tile-text">{tile.number_text}</h2>

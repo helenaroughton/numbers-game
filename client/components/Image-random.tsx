@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { data, Image } from '../data/level-one'
 
 interface Props {
@@ -10,25 +11,26 @@ function RandomImageGenerator({ randomNumber }: Props) {
     (image) => image.number === randomNumber,
   )
 
+  const handleAudio = () => {
+    if (randomImage?.audio) {
+      const audio = new Audio(randomImage.audio)
+      audio.play().catch((error) => {
+        console.error('Audio playback failed:', error)
+      })
+    }
+  }
+
   return (
     <div className="image-container">
       <h2 id="number-question">How many {randomImage.text} are there?</h2>
-      {/* <audio controls preload>
-        <track
-          kind="captions"
-          srcLang="en"
-          src="${randomImage.number}"
-          label="english-captions"
-        ></track>
-        <source src={randomImage.audio} type="audio" />
-      </audio> */}
-
-      <img
-        className="numberImage"
-        key={randomImage.number}
-        src={randomImage.image}
-        alt={randomImage.alt}
-      />
+      <button className="image-button" onClick={handleAudio}>
+        <img
+          className="numberImage"
+          key={randomImage.number}
+          src={randomImage.image}
+          alt={randomImage.alt}
+        />
+      </button>
     </div>
   )
 }

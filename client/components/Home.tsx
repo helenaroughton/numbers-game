@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
-      <p>Learning Numbers!</p>
+      <h2></h2>
+      <p></p>
     </div>
   )
 }

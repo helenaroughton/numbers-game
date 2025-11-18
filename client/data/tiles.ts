@@ -18,6 +18,7 @@ export interface NumberBoth {
   image: string
   alt: string
   number_text: string
+  audio: string
 }
 export interface NumberSymbol {
   number: number
@@ -51,6 +52,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/1.png',
       alt: '1',
       number_text: 'one',
+      audio: '/sounds/one.m4a',
     },
     {
       number: 2,
@@ -58,6 +60,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/2.png',
       alt: '2',
       number_text: 'two',
+      audio: '/sounds/two.m4a',
     },
     {
       number: 3,
@@ -65,6 +68,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/3.png',
       alt: '3',
       number_text: 'three',
+      audio: '/sounds/three.m4a',
     },
     {
       number: 4,
@@ -72,6 +76,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/4.png',
       alt: '4',
       number_text: 'four',
+      audio: '/sounds/four.m4a',
     },
     {
       number: 5,
@@ -79,6 +84,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/5.png',
       alt: '5',
       number_text: 'five',
+      audio: '/sounds/five.m4a',
     },
     {
       number: 6,
@@ -86,6 +92,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/6.png',
       alt: '6',
       number_text: 'six',
+      audio: '/sounds/six.m4a',
     },
     {
       number: 7,
@@ -93,6 +100,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/7.png',
       alt: '7',
       number_text: 'seven',
+      audio: '/sounds/seven.m4a',
     },
     {
       number: 8,
@@ -100,6 +108,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/8.png',
       alt: '8',
       number_text: 'eight',
+      audio: '/sounds/eight.m4a',
     },
     {
       number: 9,
@@ -107,6 +116,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/9.png',
       alt: '9',
       number_text: 'nine',
+      audio: '/sounds/nine.m4a',
     },
     {
       number: 10,
@@ -114,6 +124,7 @@ export const oneToTenTilesBoth: TilesNumberBoth = {
       image: '/images/png/10.png',
       alt: '10',
       number_text: 'ten',
+      audio: '/sounds/ten.m4a',
     },
   ],
 }
