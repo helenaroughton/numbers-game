@@ -19,8 +19,7 @@ A fun, interactive math game built for my 2 year old niece to develop her number
 ## Tech Stack
 
 **Frontend:** React, TypeScript, CSS
-**Backend:**Node.js, Express
-**Database:** SQLite (Knex.js)
+**Backend:** N/A - client-side only application
 **Testing:** Vitest, React Testing Library
 
 ## Why I Built This
@@ -32,4 +31,5 @@ My niece needed an engaging way to practice her numbers. This project taught me 
 - Better mobile responsiveness.
 - New and cleaner audio prompts.
 - New images that are more consistent in style and sizing.
+- Testing.
 - Difficulty levels that either add more numbers (11-20), remove audio prompts, or require selection of both symbol and written word tiles.
