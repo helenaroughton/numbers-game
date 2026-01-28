@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router'
-import LevelOne from './Level1'
+import LevelOne from './Level1.tsx'
 import Footer from './Footer'
 import Header from './Header'
 

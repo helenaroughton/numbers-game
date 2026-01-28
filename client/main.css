@@ -1,13 +1,17 @@
 #app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #b9ebd5e7;
+  font-family: 'Poppins', sans-serif;
+  color: #0a1520;
 }
 
-body {
-  background-color: #b9ebd5e7;
-  color: #0a1520;
-  font-family: 'Poppins', sans-serif;
+.body {
+  flex: 1;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -149,4 +153,44 @@ body {
     height: auto;
     object-fit: contain;
   }
+}
+
+/* Footer Styling */
+
+.footer {
+  flex-shrink: 0;
+}
+.site-footer {
+  background-color: #b9ebd5e7;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.copyright-text {
+  color: #4e1fce;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+}
+
+.social-icon {
+  color: #4e1fce;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #b9ebd5e7;
 }
