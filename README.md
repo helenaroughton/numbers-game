@@ -1,6 +1,6 @@
 # Numbers Game
 
-A fun, interactive math game built for my 2 year old niece to develop her number recognition with both number symbols (e.g. 1, 2, 3) and the written number (e.g. one, two, three). She loves animals, so different picture load showing varying numbers of animals (e.g. 4 ducks or 8 rabbits), the audio of the number is played aloud, and she then selects which tile shows that number. If she gets it wrong, the tile shakes, and if she gets it correct, the tile explodes with confetti.
+A fun, interactive math game built for my 2 year old niece to develop her number recognition with both number symbols (e.g. 1, 2, 3) and the written number (e.g. one, two, three). She loves animals, so a different image will render that displays varying numbers of animals (e.g. 4 ducks or 8 rabbits). The audio of the number can be played aloud, and she then selects which tile matches the number of animals. If she gets it wrong, the tile shakes, and if she gets it correct, the tile explodes with confetti.
 
 ## Screenshot
 
@@ -18,10 +18,10 @@ A fun, interactive math game built for my 2 year old niece to develop her number
 
 ## Tech Stack
 
-Frontend: React, TypeScript, CSS
-Backend: Node.js, Express
-Database: SQLite (Knex.js)
-Testing: Vitest, React Testing Library
+**Frontend:** React, TypeScript, CSS
+**Backend:**Node.js, Express
+**Database:** SQLite (Knex.js)
+**Testing:** Vitest, React Testing Library
 
 ## Why I Built This
 
