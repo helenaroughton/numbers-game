@@ -30,6 +30,6 @@ My niece needed an engaging way to practice her numbers. This project taught me 
 
 - Better mobile responsiveness.
 - New and cleaner audio prompts.
-- New images that are more consistent in style and sizing.
+- New images that are more consistent in style and sizing. Likely use animal icons and randomise the number of icons generated each time too e.g. 4 lions or 7 lions or 4 sheep or 7 sheep - changes each time.
 - Testing.
 - Difficulty levels that either add more numbers (11-20), remove audio prompts, or require selection of both symbol and written word tiles.
