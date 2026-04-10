@@ -69,7 +69,7 @@ function Level({ range, mode }: Props) {
       {/* Question: show N copies of the animal */}
       <div className="question">
         <h2 className="question-text">
-          How many {animal.name}s are there?
+          How many {animal.plural ?? `${animal.name}s`} are there?
         </h2>
         <AnimalGrid animal={animal} count={count} />
       </div>

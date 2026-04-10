@@ -5,26 +5,23 @@ interface Props {
   count: number
 }
 
-// Returns a px size that shrinks as count grows, so icons always fit on screen
-function iconSize(count: number): number {
-  if (count <= 5) return 80
-  if (count <= 10) return 64
-  if (count <= 15) return 48
-  return 36
+// Maps count to a CSS class so icon size can be controlled (and scaled) entirely in CSS
+function countClass(count: number): string {
+  if (count <= 5) return 'count-xs'
+  if (count <= 10) return 'count-sm'
+  if (count <= 15) return 'count-md'
+  return 'count-lg'
 }
 
 function AnimalGrid({ animal, count }: Props) {
-  const size = iconSize(count)
-
   return (
-    <div className="animal-grid">
+    <div className={`animal-grid ${countClass(count)}`}>
       {Array.from({ length: count }).map((_, i) => (
         <img
           key={i}
           src={animal.image}
           alt={animal.name}
           className="animal-icon"
-          style={{ width: size, height: size }}
         />
       ))}
     </div>

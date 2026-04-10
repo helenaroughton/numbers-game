@@ -4,6 +4,7 @@ const base = import.meta.env.BASE_URL
 
 export interface Animal {
   name: string
+  plural?: string // only needed when the plural isn't just name + 's'
   image: string
 }
 
@@ -11,10 +12,10 @@ export const animals: Animal[] = [
   { name: 'ant', image: `${base}images/png/ant.png` },
   { name: 'bird', image: `${base}images/png/bird.png` },
   { name: 'bumblebee', image: `${base}images/png/bumblebee.png` },
-  { name: 'butterfly', image: `${base}images/png/butterfly.png` },
+  { name: 'butterfly', plural: 'butterflies', image: `${base}images/png/butterfly.png` },
   { name: 'cat', image: `${base}images/png/cat.png` },
   { name: 'chicken', image: `${base}images/png/chicken.png` },
-  { name: 'clown fish', image: `${base}images/png/clownfish.png` },
+  { name: 'clown fish', plural: 'clown fish', image: `${base}images/png/clownfish.png` },
   { name: 'crab', image: `${base}images/png/crab.png` },
   { name: 'dog', image: `${base}images/png/dog.png` },
   { name: 'dolphin', image: `${base}images/png/dolphin.png` },
@@ -29,8 +30,8 @@ export const animals: Animal[] = [
   { name: 'kangaroo', image: `${base}images/png/kangaroo.png` },
   { name: 'ladybug', image: `${base}images/png/ladybug.png` },
   { name: 'lizard', image: `${base}images/png/lizard.png` },
-  { name: 'mouse', image: `${base}images/png/mouse.png` },
-  { name: 'octopus', image: `${base}images/png/octopus.png` },
+  { name: 'mouse', plural: 'mice', image: `${base}images/png/mouse.png` },
+  { name: 'octopus', plural: 'octopuses', image: `${base}images/png/octopus.png` },
   { name: 'owl', image: `${base}images/png/owl.png` },
   { name: 'parrot', image: `${base}images/png/parrot.png` },
   { name: 'pig', image: `${base}images/png/pig.png` },

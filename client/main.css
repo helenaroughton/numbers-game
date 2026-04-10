@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+/* Ensures the green background fills the viewport even when #app is capped in width */
+body {
+  background-color: #b9ebd5;
+}
+
 #app {
   display: flex;
   flex-direction: column;
@@ -131,6 +136,12 @@
 .animal-icon {
   object-fit: contain;
 }
+
+/* Icon sizes scale down as count grows so icons always fit in the grid */
+.count-xs .animal-icon { width: 80px;  height: 80px;  }
+.count-sm .animal-icon { width: 64px;  height: 64px;  }
+.count-md .animal-icon { width: 48px;  height: 48px;  }
+.count-lg .animal-icon { width: 36px;  height: 36px;  }
 
 /* ===== Answer tiles ===== */
 
@@ -311,5 +322,68 @@
 
   .tile-word {
     font-size: 0.95rem;
+  }
+}
+
+/* ===== Wide desktop (1100px+) ===== */
+
+@media (min-width: 1100px) {
+  #main-title {
+    font-size: 3.5rem;
+  }
+
+  .sidebar {
+    width: 260px;
+    padding: 1.25rem 1rem;
+  }
+
+  .level-nav-button {
+    padding: 1rem 1.25rem;
+  }
+
+  .level-label {
+    font-size: 1.15rem;
+  }
+
+  .level-desc {
+    font-size: 0.8rem;
+  }
+
+  .game-area {
+    padding: 2rem 3rem;
+  }
+
+  .question-text {
+    font-size: 2.2rem;
+  }
+
+  .animal-grid {
+    max-width: 760px;
+    gap: 14px;
+    padding: 2rem;
+  }
+
+  /* Larger icon sizes at wide desktop */
+  .count-xs .animal-icon { width: 120px; height: 120px; }
+  .count-sm .animal-icon { width: 96px;  height: 96px;  }
+  .count-md .animal-icon { width: 72px;  height: 72px;  }
+  .count-lg .animal-icon { width: 54px;  height: 54px;  }
+
+  .tiles {
+    max-width: 760px;
+    gap: 1rem;
+  }
+
+  .tile-button {
+    min-height: 6.5rem;
+    border-radius: 18px;
+  }
+
+  .tile-number {
+    font-size: 2.4rem;
+  }
+
+  .tile-word {
+    font-size: 1.1rem;
   }
 }
