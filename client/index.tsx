@@ -1,9 +1,7 @@
 import { createRoot } from 'react-dom/client'
-import Router from './router.tsx'
-import { RouterProvider } from 'react-router/dom'
+import App from './components/App'
 
+// Simplified: no router needed since all navigation is handled by useState in App
 document.addEventListener('DOMContentLoaded', () => {
-  createRoot(document.getElementById('app') as HTMLElement).render(
-    <RouterProvider router={Router} />,
-  )
+  createRoot(document.getElementById('app') as HTMLElement).render(<App />)
 })
