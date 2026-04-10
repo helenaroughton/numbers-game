@@ -5,9 +5,12 @@ export interface Animal {
   image: string
 }
 
+// import.meta.env.BASE_URL is '/' in dev and '/numbers-game/' on GitHub Pages
+const base = import.meta.env.BASE_URL
+
 export const animals: Animal[] = [
-  { name: 'parrot', image: '/images/png/parrot.png' },
-  { name: 'toucan', image: '/images/png/toucan.png' },
-  { name: 'bear', image: '/images/png/bear.png' },
-  { name: 'lemur', image: '/images/png/lemur.png' },
+  { name: 'parrot', image: `${base}images/png/parrot.png` },
+  { name: 'toucan', image: `${base}images/png/toucan.png` },
+  { name: 'bear', image: `${base}images/png/bear.png` },
+  { name: 'lemur', image: `${base}images/png/lemur.png` },
 ]
